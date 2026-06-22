@@ -1,0 +1,363 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Catálogo | Komugi - Confección Artesanal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#f0bd8b",
+                    "inverse-on-surface": "#f2f0ed",
+                    "secondary": "#7d562d",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#fbf9f5",
+                    "on-error-container": "#93000a",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#fffbff",
+                    "background": "#fbf9f5",
+                    "on-tertiary-container": "#fffbff",
+                    "secondary-container": "#ffca98",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed": "#f9dfb1",
+                    "error": "#ba1a1a",
+                    "on-surface": "#1b1c1a",
+                    "on-surface-variant": "#51443e",
+                    "inverse-surface": "#30312e",
+                    "surface-container-low": "#f5f3ef",
+                    "primary-fixed": "#ffdbca",
+                    "on-tertiary-fixed-variant": "#554422",
+                    "on-primary-fixed": "#311302",
+                    "inverse-primary": "#f4ba9c",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#e4e2de",
+                    "tertiary-container": "#86724c",
+                    "primary": "#7e5139",
+                    "outline": "#83746d",
+                    "outline-variant": "#d6c3ba",
+                    "primary-container": "#9a6950",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#dcc497",
+                    "on-secondary-fixed-variant": "#623f18",
+                    "surface-dim": "#dbdad6",
+                    "on-secondary-fixed": "#2c1600",
+                    "on-secondary-container": "#7a532a",
+                    "surface-tint": "#80543b",
+                    "secondary-fixed": "#ffdcbd",
+                    "primary-fixed-dim": "#f4ba9c",
+                    "on-tertiary-fixed": "#261a00",
+                    "tertiary": "#6c5a35",
+                    "surface-container-highest": "#e4e2de",
+                    "surface-container-high": "#eae8e4",
+                    "on-background": "#1b1c1a",
+                    "surface-container": "#efeeea",
+                    "on-primary-fixed-variant": "#653d26",
+                    "surface": "#fbf9f5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Montserrat"],
+                    "headline-sm": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "body-md": ["Montserrat"],
+                    "label-md": ["Montserrat"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "label-sm": ["Montserrat"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.03em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .scrolled {
+            box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.05);
+        }
+        .text-clay { color: #7e5139; }
+        .bg-clay { background-color: #7e5139; }
+        .ambient-card-shadow {
+            box-shadow: 0 20px 40px -15px rgba(126, 81, 57, 0.04);
+        }
+        .ambient-card-shadow:hover {
+            box-shadow: 0 30px 60px -15px rgba(126, 81, 57, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit max-w-container-max mx-auto">
+<a class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tight" href="#">Komugi</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Inicio</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Niñas</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Mujeres</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="#">Galería</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Contacto</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md text-label-md hover:opacity-80 transition-opacity active:scale-95 transition-transform">
+                Consultar por WhatsApp
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<header class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-16">
+<div class="mb-4 flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest">
+<a class="hover:text-primary" href="#">Inicio</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Catálogo</span>
+</div>
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-12 md:p-20 flex flex-col items-center text-center">
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#7e5139 1px, transparent 1px); background-size: 24px 24px;"></div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 relative">Diseños Komugi</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto relative">
+                    Prendas confeccionadas artesanalmente para acompañar momentos cotidianos y especiales, celebrando la belleza de lo hecho a mano.
+                </p>
+</div>
+</header>
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-12">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-6 border-b border-outline-variant">
+<div class="flex flex-wrap gap-2">
+<button class="px-5 py-2 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md transition-all">Todos</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-secondary-container/50 font-label-md text-label-md transition-all">Niñas</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-secondary-container/50 font-label-md text-label-md transition-all">Mujeres</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-secondary-container/50 font-label-md text-label-md transition-all">Vestidos</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-secondary-container/50 font-label-md text-label-md transition-all">Conjuntos</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-secondary-container/50 font-label-md text-label-md transition-all">Blusas</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-secondary-container/50 font-label-md text-label-md transition-all">Accesorios</button>
+</div>
+<div class="flex items-center gap-4">
+<label class="font-label-md text-label-md text-on-surface-variant">Ordenar por:</label>
+<select class="bg-transparent border-none focus:ring-0 font-label-md text-label-md text-primary cursor-pointer">
+<option>Destacados</option>
+<option>Más recientes</option>
+<option>Menor precio</option>
+<option>Mayor precio</option>
+</select>
+</div>
+</div>
+</section>
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter">
+<div class="group flex flex-col" style="opacity: 1; transform: translateY(0px);">
+<div class="aspect-[3/4] overflow-hidden rounded-lg mb-4 relative bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A delicate handmade cream-colored linen dress for girls hanging on a rustic wooden hanger against a soft textured plaster wall. The dress features intricate floral embroidery on the chest and fine lace detailing on the sleeves and waist. The lighting is soft and natural, emphasizing the organic texture of the fabric. High-end boutique aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkC0EXQ2zrD5IUwjQ4N0LzY2IpffkCqbCAxrpd0Ahqv9s4e4zDP5uurNAUW596kaRfpc2Efp8y1exh1pOfj-inc83IoV0ptGSDZuuY8dxo0nRJumdGRQgS0sIX3wmc3dDrGtR4vUrdY_ExFBdLqrGZScTcfZ2-49Q0PriQJTqG2nq2tLT6Xi_ZlJed0DLv4yheHHYK1V6NBqHWJ8kbtnsuckgHvvvAPr2mB8BqMBuoHcS3olV9hCdfA47PCX_WWvWNpl2QTigjanY">
+<span class="absolute top-4 left-4 bg-primary/90 text-on-primary px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest">Hecho a medida</span>
+</div>
+<div class="flex flex-col flex-grow">
+<p class="font-label-sm text-label-sm text-primary mb-1 uppercase tracking-tighter">Niñas • Vestidos</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Vestido Margarita</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-4">Lino premium con bordados artesanales de flores silvestres y encaje de algodón.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Desde $2.400</span>
+<a class="text-primary font-label-md text-label-md border-b border-primary hover:opacity-70 transition-opacity" href="#">Ver diseño</a>
+</div>
+</div>
+</div>
+<div class="group flex flex-col" style="opacity: 1; transform: translateY(0px);">
+<div class="aspect-[3/4] overflow-hidden rounded-lg mb-4 relative bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An editorial lifestyle photograph of a woman wearing a flowing terracotta linen dress, standing in a bright sunlit room with olive trees in terracotta pots. The dress has a relaxed silhouette with subtle hand-stitched details along the seams. Warm golden hour lighting creates a serene, artisanal atmosphere. Earthy tones and natural materials." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCx8mmgoCQw_x6SfzuuyHPgJ0iXgCjeQ_7Ed9RlqRJE3VlHW6iEnQNtbZFkJic9n-V4Km-9kuaIEACXJmF91Oc61mDvdvzvziEJU54jM2vDiOhPXo4_5sLaCECE0QiWwIvAGLi83DH6NmBm43mCy9xKbARtB2wb5DEIHpA0J3Sy73I_xpJEmYYUhWvwrSc2Yt9DL2mMGcgmC_TOEVVfcXwnMkA98tfQ8-itM_nMoZc2wzzs8jz9lrFCXadUg7XLqDnRKBH9YDHCq8">
+<span class="absolute top-4 left-4 bg-tertiary-container text-on-tertiary px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest">Por encargo</span>
+</div>
+<div class="flex flex-col flex-grow">
+<p class="font-label-sm text-label-sm text-primary mb-1 uppercase tracking-tighter">Mujeres • Vestidos</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Vestido Terra</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-4">Silueta fluida en lino color arcilla con detalles de puntilla a tono.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Desde $4.800</span>
+<a class="text-primary font-label-md text-label-md border-b border-primary hover:opacity-70 transition-opacity" href="#">Ver diseño</a>
+</div>
+</div>
+</div>
+<div class="group flex flex-col">
+<div class="aspect-[3/4] overflow-hidden rounded-lg mb-4 relative bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up shot of a beige linen fabric showing detailed white floral embroidery with small pearl accents. The texture of the high-quality textile is clearly visible, illuminated by soft side lighting that highlights every stitch. Minimalist and elegant craftsmanship display." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFQzyt9fL35V5o49hP2l406WO0owBdghsTwkoLgIXDaesSU6sU-20eZ-0ocO3y59SnbDFMqn_ZPEOZmGRQ8rm5KveYeLqHK6xQA76SnGqbbwkxwgW273Mcl6MxeKw4C6hxEZOYvrOs_55d8dtGRtBl0bh2NCFE2_xNCwpEp4cezCsxEGIODoMvbSylmncKCH9glPnU4ci1mjdRdyR9vT2iptlCLem4HAc81bpTzABU6Myjb1xKsnPrRIPpYxEncKLzMVmeOXV81zs">
+</div>
+<div class="flex flex-col flex-grow">
+<p class="font-label-sm text-label-sm text-primary mb-1 uppercase tracking-tighter">Niñas • Conjuntos</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Conjunto Perla</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-4">Blusa y bombachudo de lino con apliques de mini perlas y bordado a mano.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Desde $3.200</span>
+<a class="text-primary font-label-md text-label-md border-b border-primary hover:opacity-70 transition-opacity" href="#">Ver diseño</a>
+</div>
+</div>
+</div>
+<div class="group flex flex-col">
+<div class="aspect-[3/4] overflow-hidden rounded-lg mb-4 relative bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A lifestyle image of a mother and daughter laughing together in a rustic stone-walled room. The mother wears a cream linen dress and the daughter wears a dusty pink linen dress. Both garments feature intricate lace and embroidery. Warm, bright light streaming through windows, creating a cozy and loving family moment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuFe9gDEJxRP46ghBavsyOw9Lsx_HUnWOWo00d5YF30jUyGJF36ORnCYQp2yfZrmJHkGh4r76LP3-6x_tJRPl_qymmIIytP0-czECJIiT36ZXL5lXl7f4IW1OMpkJQRVFstx09ukHVbBPB8JgLM8bMX44jDnciBUf8qga_L2fb4X6C3fye64k-nZvyrZ7GZrM_omzLJL-CzEYv4oczgOKBnjUX3fSmnGoV4AzhhyOw3BAhFsXmPcyWTfeEHIuJSPZ-VzjPWhDeA4k">
+<span class="absolute top-4 left-4 bg-primary/90 text-on-primary px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest">Hecho a medida</span>
+</div>
+<div class="flex flex-col flex-grow">
+<p class="font-label-sm text-label-sm text-primary mb-1 uppercase tracking-tighter">Mujeres • Vestidos</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Vestido Amanecer</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-4">Inspirado en la naturaleza, con escote en V y mangas tres cuartos.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Desde $4.500</span>
+<a class="text-primary font-label-md text-label-md border-b border-primary hover:opacity-70 transition-opacity" href="#">Ver diseño</a>
+</div>
+</div>
+</div>
+<div class="group flex flex-col">
+<div class="aspect-[3/4] overflow-hidden rounded-lg mb-4 relative bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A wooden spool of high-quality organic cotton thread resting on a cream-colored fabric. Strong shadows define the shape of the spool, emphasizing a theme of traditional craftsmanship and preparation for sewing. The color palette is composed of neutrals, browns, and soft creams." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4WlZD9GK7WK_m8cSx5YGR20ifhrcbwZCnLj_WdaP5OOeDs_ubWeM6kR9M0MKGLKCV8_tlovSCOjeV0BNPtVuVEeFv0SjFMwzorBQJiTN0SRDaawOAXFgbs-8NeB0yXmvnWp072A2xWE5r2bXCOJrncViF8mknm9d1UDO9paZmIqt7IB2fXBBkTvn8EHebQgpMoOxnXkojIkNQuNrj3g9nPqs9aeJgzTYXV8z_O9U4eI25w_VXgvyJe2yh03rXlmz9d9qXzqY5OL8">
+</div>
+<div class="flex flex-col flex-grow">
+<p class="font-label-sm text-label-sm text-primary mb-1 uppercase tracking-tighter">Accesorios</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Cinturón Trenzado</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-4">Accesorio tejido a mano para complementar vestidos de lino.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Desde $800</span>
+<a class="text-primary font-label-md text-label-md border-b border-primary hover:opacity-70 transition-opacity" href="#">Ver diseño</a>
+</div>
+</div>
+</div>
+<div class="group flex flex-col">
+<div class="aspect-[3/4] overflow-hidden rounded-lg mb-4 relative bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a textile tag that reads 'HANDCRAFTED BY ELLA' sewn onto a textured beige fabric. The stitching is clean and professional, symbolizing the artisanal quality and personal touch of the Komugi brand. Soft lighting highlights the weave of the fabric." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj0akpY5yLBMMmwQs4K6Z8GqfLPA2BjnI6jeMnr7F0iPRx08JGpKNP69cueDnPlMwDRaf9Pc0hbSrB5DZYF4jRudnpsTjcGPwzJBuASycprI9Q8KAygPxHigMCgCX6pQ0f4XfIKJAaC092oiQ6zIefJ72gmqAGABhLPktbuVn5upMAmlyFNIihe8plR_c-zK1CTN8fiQJBfvqJxffMxzcngiyn26Zfs7kq7JHWHVt_Jr67oIlerf2p1MGt_q5B71UnOuZNtsNdPR0">
+<span class="absolute top-4 left-4 bg-tertiary-container text-on-tertiary px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest">Por encargo</span>
+</div>
+<div class="flex flex-col flex-grow">
+<p class="font-label-sm text-label-sm text-primary mb-1 uppercase tracking-tighter">Mujeres • Blusas</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Blusa Artisana</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-4">Blusa de lino liviana con terminaciones a mano y botones de nácar.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Desde $2.900</span>
+<a class="text-primary font-label-md text-label-md border-b border-primary hover:opacity-70 transition-opacity" href="#">Ver diseño</a>
+</div>
+</div>
+</div>
+<div class="group flex flex-col">
+<div class="aspect-[3/4] overflow-hidden rounded-lg mb-4 relative bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A soft-focus lifestyle image of a young girl playing in a garden, wearing a dusty rose linen dress with delicate lace trims. The sunlight filters through green leaves, creating beautiful bokeh and a sense of nostalgic summer days. The dress is airy and comfortable." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdiFipunk48aGdc75-c0osmHpITbrG9sgRxxpW-LrzUTFuIEvc9mIsf_QhYrjk4Grp5dAF8QHtG8kyPZXOY68XbQuEIDRGRQR-1LMdb9HoudLss3SY1uUZ7N-kdCNzEduyHyVX-IanmNz-ehchZuwxS4qFMUGIH2MUNsa_g9laFsDpRzmr62chrnbeqntkkX7dsvd3DKmAzx-B7uy7zEMk1c88TXbXAnrSxiesQR7hzo0pBmUQiZdTTFeUDgkC8lPiLa3NRV_Tphc">
+</div>
+<div class="flex flex-col flex-grow">
+<p class="font-label-sm text-label-sm text-primary mb-1 uppercase tracking-tighter">Niñas • Vestidos</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Vestido Rosa Silvestre</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-4">Color rosa viejo teñido artesanalmente con tintes naturales.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Desde $2.600</span>
+<a class="text-primary font-label-md text-label-md border-b border-primary hover:opacity-70 transition-opacity" href="#">Ver diseño</a>
+</div>
+</div>
+</div>
+<div class="group flex flex-col">
+<div class="aspect-[3/4] overflow-hidden rounded-lg mb-4 relative bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of a woven fabric showing a complex interlocking pattern of natural fibers in light tan and beige. The textile has a heavy, durable feel while maintaining an organic elegance. Macro photography highlighting the artisanal texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4NZ3bN2lZ2Lz-D3EG7Cuhj-ouuTdBpok75dgBkZkbzxYrinG5YtEwhT5lCZWN7uYReev2rPRLUW4as4BCRsZmb2HcnnB4CecKhdUnqQQSxn_DeMAsT2PByog2UxXZELH_N78vtBkYpk-w0kiV7VTenZCT14ZBqeIGBFcQIIUWt8joQ5Y--nopo6fsnXz1YkTLGe3DT2AycdFddO70zLLzVl7blEVpzJehhPT-38CcoG3vlk0PiB2PdilcILNrbCDmfcmSuWJUPzg">
+</div>
+<div class="flex flex-col flex-grow">
+<p class="font-label-sm text-label-sm text-primary mb-1 uppercase tracking-tighter">Accesorios</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Mantita de Apego</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-4">Tejida en algodón orgánico peinado, suave al contacto con la piel.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Desde $1.200</span>
+<a class="text-primary font-label-md text-label-md border-b border-primary hover:opacity-70 transition-opacity" href="#">Ver diseño</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="bg-surface-container-low rounded-2xl p-12 md:p-24 flex flex-col items-center text-center overflow-hidden relative">
+<div class="absolute -bottom-12 -right-12 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-secondary-container/10 rounded-full blur-3xl"></div>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-8 relative">¿No encontraste lo que buscabas?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-12 relative">
+                    En Komugi amamos los desafíos creativos. Podemos crear una prenda única inspirada en tu idea o adaptar nuestros diseños a tus medidas y preferencias.
+                </p>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all shadow-lg shadow-primary/10 relative">
+                    Solicitar diseño personalizado
+                </button>
+</div>
+</section>
+</main>
+<footer class="bg-surface-container-low w-full py-16 px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter items-start max-w-container-max mx-auto">
+<div>
+<a class="font-display-lg text-display-lg-mobile text-primary tracking-tight mb-4 inline-block" href="#">Komugi</a>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mt-4">
+                    © 2024 Komugi. Confección artesanal en Montevideo. Prendas con alma y dedicación.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-on-surface uppercase tracking-widest mb-2">Explorar</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Inicio</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Niñas</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Mujeres</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Galería</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contacto</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-on-surface uppercase tracking-widest mb-2">Contacto</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Montevideo, Uruguay</p>
+<p class="font-body-md text-body-md text-on-surface-variant">hola@komugi.com.uy</p>
+<div class="flex gap-4 mt-2">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto mt-16 pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Komugi. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary" href="#">Términos y Condiciones</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary" href="#">Políticas de Privacidad</a>
+</div>
+</div>
+</footer>
+<script>
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Simple smooth entrance animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const items = document.querySelectorAll('.group');
+            items.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                item.style.transition = 'all 0.6s ease-out';
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+        });
+    </script>
+</body></html>

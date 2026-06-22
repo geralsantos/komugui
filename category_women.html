@@ -1,0 +1,556 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Women | Komugi Artisanal Boutique</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#fbf9f5",
+                        "on-primary-fixed": "#311302",
+                        "secondary": "#7d562d",
+                        "on-secondary-fixed-variant": "#623f18",
+                        "outline": "#83746d",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#51443e",
+                        "on-surface": "#1b1c1a",
+                        "on-background": "#1b1c1a",
+                        "secondary-container": "#ffca98",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#f0bd8b",
+                        "primary-container": "#9a6950",
+                        "on-tertiary-fixed-variant": "#554422",
+                        "surface-container-low": "#f5f3ef",
+                        "inverse-primary": "#f4ba9c",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed": "#2c1600",
+                        "inverse-on-surface": "#f2f0ed",
+                        "surface-container-high": "#eae8e4",
+                        "tertiary": "#6c5a35",
+                        "primary-fixed-dim": "#f4ba9c",
+                        "surface-dim": "#dbdad6",
+                        "tertiary-fixed": "#f9dfb1",
+                        "outline-variant": "#d6c3ba",
+                        "on-tertiary-container": "#fffbff",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#fffbff",
+                        "primary-fixed": "#ffdbca",
+                        "surface-bright": "#fbf9f5",
+                        "on-secondary-container": "#7a532a",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e4e2de",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#653d26",
+                        "on-tertiary-fixed": "#261a00",
+                        "error": "#ba1a1a",
+                        "surface-container": "#efeeea",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#86724c",
+                        "secondary-fixed": "#ffdcbd",
+                        "primary": "#7e5139",
+                        "surface": "#fbf9f5",
+                        "surface-variant": "#e4e2de",
+                        "tertiary-fixed-dim": "#dcc497",
+                        "surface-tint": "#80543b",
+                        "inverse-surface": "#30312e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "body-lg": ["Montserrat"],
+                        "body-md": ["Montserrat"],
+                        "label-md": ["Montserrat"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "label-sm": ["Montserrat"],
+                        "headline-sm": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.03em", "fontWeight": "500"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fbf9f5;
+            color: #1b1c1a;
+            overflow-x: hidden;
+        }
+        .text-clay { color: #7e5139; }
+        .bg-clay { background-color: #7e5139; }
+        
+        .fade-in { animation: fadeIn 1s ease-out forwards; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-background">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky z-50 bg-surface/80 backdrop-blur-md transition-all duration-300 ease-in-out">
+<div class="max-w-container-max mx-auto px-margin-desktop flex justify-between items-center h-20">
+<a class="font-display-lg text-display-lg text-primary tracking-tighter" href="#">Komugi</a>
+<nav class="hidden md:flex items-center space-gap-gutter gap-10">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Girls</a>
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="#">Women</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Gallery</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-primary hover:opacity-80 transition-opacity">shopping_basket</button>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-md text-label-md hover:opacity-90 transition-opacity">Consultation</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[85vh] w-full overflow-hidden flex items-center">
+<div class="absolute inset-0 z-0">
+<img alt="Hero woman in terracotta linen dress" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLv6N-DwHQXjAYKNfe2LK2rrrUgXae2GPj1hLX0cg6T7d9mjCrz4P1QEzmGmtdSqcMu-k8TxyTkxjaxzl2l5dzSiXH0aAxQ_ckPBoJKN6bV_MiaRTT22YNv90zR_COJUQdQuNDV3TFQ0PuszhmZUBWcvfCOxKd-n3rZiyPGijVPou1q06VOPy-XNQuPu-YMsTq9dXOqu4gMnkzGZpQPHGIdhZA-cAazC_NDdeuNmSnaPkSPZgE6wooOeEqQ">
+<div class="absolute inset-0 bg-black/10"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-desktop w-full">
+<div class="max-w-xl fade-in">
+<span class="font-label-md text-label-md uppercase tracking-widest text-on-primary mb-4 block">Nueva Colección</span>
+<h1 class="font-display-lg text-display-lg text-on-primary mb-6 leading-tight">Prendas para mujeres</h1>
+<p class="font-body-lg text-body-lg text-on-primary/90 mb-10">Diseños naturales, cómodos y versátiles, confeccionados para sentirse bien todos los días.</p>
+<button class="bg-primary-container text-on-primary-container px-10 py-4 rounded-full font-label-md text-label-md hover:opacity-90 transition-all flex items-center gap-2 group">
+                        Consultar por una prenda
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Visual Subcategories (Circular Navigation) -->
+<section class="py-20 bg-background overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-wrap justify-center md:justify-between gap-8 md:gap-12 items-center">
+<!-- Vestidos -->
+<a class="flex flex-col items-center gap-4 group scroll-reveal visible" href="#">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border border-outline-variant p-1 group-hover:border-primary transition-colors duration-500">
+<div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Close-up of a warm beige linen dress texture with delicate artisanal stitching in a bright minimalist photography style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDgrvHH3VF-EimF2jX3vy-Yl73L2Di0hCoeyXyQ22aZ-5i_HfTMMchB2KkKWYHrXPRH85-gukYMqLKccNAXBbAPul99TFXcEmZGokj30UTI8MQgIWCP7IbEvsTtYQaI4uty9vsilvCS8herBVLn-PplLhvSn0P5k8zxRtps6uxCd3sd9sZVSlC7zZHfSArFZpYyUyLLsat0fnvVPUFDbJkzT5zlil0U0SxNTCmE4G5U32fk-xb87ZPBw7bKsg6HajiiTRucOugrdhE')"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-primary transition-colors">Vestidos</span>
+</a>
+<!-- Blusas -->
+<a class="flex flex-col items-center gap-4 group scroll-reveal visible" href="#" style="transition-delay: 100ms;">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border border-outline-variant p-1 group-hover:border-primary transition-colors duration-500">
+<div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Detail of a flowy white cotton blouse with puff sleeves and organic wooden buttons against a soft cream background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4vB4GrqNOT0v3F1bwGLxUD8fBjEa7UOh79sBHmYKnTOuSIE9ciVfYw_GOOUYUAz46S88n0AbLC1-trDzCKCkBy8dRATht3pJdi0KaKxL3CxZ9i26mhc2ugUEz3sqmsKUotSdRGHQA6DYxqF9Fu3kw9TpgkIYmB68-HG66ueUE8w7laXWlZiPt2aXKIayhlTaGgrEvbidKrgflIEa38uCDKNmwPkF1ybvRQ1xX2RhAj-V52TmpjruI4ekKVY_-3XLb-6qRc8y-OKs')"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-primary transition-colors">Blusas</span>
+</a>
+<!-- Conjuntos -->
+<a class="flex flex-col items-center gap-4 group scroll-reveal visible" href="#" style="transition-delay: 200ms;">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border border-outline-variant p-1 group-hover:border-primary transition-colors duration-500">
+<div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Coordinated linen set in soft terracotta color, including a relaxed shirt and wide-leg trousers, shot in soft natural sunlight." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAD_KnVcGL5qbfSI-aevm41dG2rYZ_UvtYkzmnBeIlsDalcgfqgQXf4shNavGGTcnnSQUDcNtaCHUr6T5OEL3UdI3gR093GDAbf11rJ-bUjRBc2ONmqM0SXCLH4M5DxHnrY4FBQymvEbAos7-WXYUTMbTVt9CB8U5BeaNfdzEg43HWjY8ZAOPfKGu5HsWv8eNkPITDKv7fS77nenIqR3JZg_l0ZRLrw8bRwQYIyCbLPTHhakLwlHlxI_IuLWavhWr-Ib6Zxb8RThzk')"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-primary transition-colors">Conjuntos</span>
+</a>
+<!-- Faldas -->
+<a class="flex flex-col items-center gap-4 group scroll-reveal visible" href="#" style="transition-delay: 300ms;">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border border-outline-variant p-1 group-hover:border-primary transition-colors duration-500">
+<div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Artisanal long skirt made of raw linen in a dusty rose color, flowing naturally in an airy, high-end studio setting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBRpX8ChLUUSLsiaIjIO88l-Po7OWRbjnbufbaYqP1-Dv4z9tzxw0sylVtdAaGkMR-o7Jkt2DXesZv79OlaAV44-NyfqSAZjAKp6ElCGaa2N-hamNHlNio8frbaingOJeZ_vjpAf8Y4w3YGsjszTpJkeYLQxfKBfjoBrT98cPCE2maQpLUSceV0QPx_OQ3e1MfXZL-YkrDAm2Qns64sQUtZt9QM-6uCnMqxsiBMo3xrb-0LcbzizxNHXogPnQXYnZzddPglAvKo2fY')"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-primary transition-colors">Faldas</span>
+</a>
+<!-- Loungewear -->
+<a class="flex flex-col items-center gap-4 group scroll-reveal visible" href="#" style="transition-delay: 400ms;">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border border-outline-variant p-1 group-hover:border-primary transition-colors duration-500">
+<div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Comfortable knitted lounge set in a neutral sand tone, highlighting the tactile softness of premium organic fibers." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbZsv0QprHL6ZPexcz5XLEWUi0LfM7pnJxrlbCGmUHf8vJxiKwPf77o1Tsw50zSYNy8DBZYP1z3RH6UiyPS5WHh1c4LhG5q33IMXdYjD23CGW7Os7_mM8hU8LHJPicH90yudEQ0g689z3W9aJ2ey3ZJ6hnx2AXu8t10UQgxRh9AjcrBXbEvfYRECH00q5-Br9MH8daq-sX-rd_zMh2nU9SUi0jnVf7rponxAN83T9N21HHN9nbYpOCGGGWQ0gutuD_vS2hJAAG_LA')"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-primary transition-colors text-center">Prendas cómodas</span>
+</a>
+<!-- Accesorios -->
+<a class="flex flex-col items-center gap-4 group scroll-reveal visible" href="#" style="transition-delay: 500ms;">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border border-outline-variant p-1 group-hover:border-primary transition-colors duration-500">
+<div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Selection of textile accessories including a linen scarf and a hand-woven bag, styled on a wooden table in a sun-drenched atelier." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCUOrmeZjaxrA7PWEdUT_7JMd2ml_KUv_ZQ8KN7YhEcjcEUJz43nQ0f5ufO3bILxltL4lHyyILJl-6kabrkVDbqdnF_kDoxxFRToVz1msfADzT4rbWZP3CVNODuS7Tk6dnYkHeBPpIqp_2gI5uNW4NUzY_oppZQGwMgcE63I5GIDd1SS7tPT-c0CDXVwoCU4T4QvFg4Vqnwp375DRNEwzy4_KGazEU_4e2hQkGUBtG3ur_nlrlJfIMaO770f7R4WmuBzJeTqEiaw0c')"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-primary transition-colors">Accesorios</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Filters Bar -->
+<section class="sticky top-20 z-40 bg-surface/95 backdrop-blur-sm border-y border-outline-variant py-4">
+<div class="max-w-container-max mx-auto px-margin-desktop flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-6 overflow-x-auto no-scrollbar pb-1 md:pb-0">
+<div class="flex flex-col min-w-max">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-1">Tipo de prenda</span>
+<select class="bg-transparent border-none p-0 pr-8 font-body-md text-body-md text-primary focus:ring-0 cursor-pointer">
+<option>Todos los estilos</option>
+<option>Vestidos</option>
+<option>Blusas</option>
+</select>
+</div>
+<div class="flex flex-col min-w-max">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-1">Talle</span>
+<select class="bg-transparent border-none p-0 pr-8 font-body-md text-body-md text-primary focus:ring-0 cursor-pointer">
+<option>Ver todos</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
+</div>
+<div class="flex flex-col min-w-max">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-1">Color</span>
+<select class="bg-transparent border-none p-0 pr-8 font-body-md text-body-md text-primary focus:ring-0 cursor-pointer">
+<option>Gama cromática</option>
+<option>Terracota</option>
+<option>Crudo</option>
+<option>Rosa Viejo</option>
+</select>
+</div>
+<div class="flex flex-col min-w-max">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-1">Material</span>
+<select class="bg-transparent border-none p-0 pr-8 font-body-md text-body-md text-primary focus:ring-0 cursor-pointer">
+<option>Fibras naturales</option>
+<option>Lino 100%</option>
+<option>Algodón Orgánico</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-4 ml-auto">
+<button class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">sort</span>
+                        Ordenar
+                    </button>
+<div class="h-6 w-[1px] bg-outline-variant"></div>
+<span class="font-label-md text-label-md text-on-surface-variant">12 Diseños</span>
+</div>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="py-20 bg-background">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-x-gutter gap-y-16">
+<!-- Product Card 1 -->
+<div class="group scroll-reveal visible">
+<div class="aspect-[3/4] overflow-hidden rounded-lg mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Elegant woman standing in a bright minimalist room wearing a long terracotta linen dress with hand-embroidered details on the chest, minimalist editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChlwlZ98Q5BBoal_cQwv0K-2L3rKM3ODDRAmQVhBUAMrnw4CSK5dlQJ8zLJYcUMSyX5LJJ25w-XA4qkqkxs0Rt8-tEA3UOFZGv1Wf6s6ftdY9XP8qVJpq3ibmbSyxzqDMyd2gtSTCpFu3QF1X63gZVrojAkTR-1xKM9GUQAHzcW5f0AyloL75kDoypv4INIHx-fC4y9GGg0HAl8daQ_Kj4rIJ7bMi1uU2ma1VZpmvRFDKpZ3tjBSk6cuSHHbfqQ_fXVz8p5wU9zpI">
+<div class="absolute top-4 left-4 bg-surface/90 px-3 py-1 rounded-full">
+<span class="font-label-sm text-label-sm text-primary uppercase">Hecho a medida</span>
+</div>
+</div>
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Vestido Solsticio</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Lino pesado premium</p>
+</div>
+<span class="font-body-lg text-body-lg text-primary">$180</span>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary border-b border-primary/20 pb-0.5 group-hover:border-primary transition-all" href="#">
+                            Ver diseño
+                            <span class="material-symbols-outlined text-[18px]">keyboard_arrow_right</span>
+</a>
+</div>
+<!-- Product Card 2 -->
+<div class="group scroll-reveal visible" style="transition-delay: 100ms;">
+<div class="aspect-[3/4] overflow-hidden rounded-lg mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cinematic lifestyle photo of a woman in a flowy ivory linen blouse and wide trousers walking through a sunlit field of dry grass, soft golden hour lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc8ELbhXo8la83YQP521hexJ1oa1rU3wFfqMuxZrLSoxnsSEdQGpkrmARlJIJSJTPkZp3Sza0zh8hm3lU01AaYgxdOKfEWNSQ8SoTqattpyTPll_eW2eydvSMAaeRO4oinbry8aCqYzlNcFyXSkhyP_PF1hXxrc5Pn8oHg0TIZc47WamSYQz2xvGOk8NIEhDcfR6Bm-mBak47Lx_je9hJPhRA58svrBMs1_raqYAyGRh2TVLFnRsQoZ4t9fHD0oO_1uoKtKz120fU">
+<div class="absolute top-4 left-4 bg-surface/90 px-3 py-1 rounded-full">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Stock limitado</span>
+</div>
+</div>
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Blusa Brisa</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Algodón Gasa doble</p>
+</div>
+<span class="font-body-lg text-body-lg text-primary">$95</span>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary border-b border-primary/20 pb-0.5 group-hover:border-primary transition-all" href="#">
+                            Ver diseño
+                            <span class="material-symbols-outlined text-[18px]">keyboard_arrow_right</span>
+</a>
+</div>
+<!-- Product Card 3 -->
+<div class="group scroll-reveal visible" style="transition-delay: 200ms;">
+<div class="aspect-[3/4] overflow-hidden rounded-lg mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Artistic portrait of a woman wearing a dusty rose wrap dress, leaning against a textured plaster wall in a warm, minimalist atelier in Montevideo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyoWWrQbDgI0fQScOB4HDRkSi0NpEda2KneZqqk5JFy_JNagK7AQYkAu3idK3B_YjDWp5eXtRQ8PiOZWcMf7x2yI3vKP2FffNMpHLFl6crqkgBy4suh6uGuCB_DYhlYLDaog0FsPGnpL7SyUBmZRlZbCvLse-uvVxSYZ77vO5qLWy6DWVbxBDvXGrCwCfN1XHom__MkmHtCMVGp6V-uq-YPp95aglnuq-ARkAUYxnUCzbeAiOYJVWgl4Q4HKUSUz03gAgBwSQvHys">
+<div class="absolute top-4 left-4 bg-surface/90 px-3 py-1 rounded-full">
+<span class="font-label-sm text-label-sm text-primary uppercase">Nuevo Diseño</span>
+</div>
+</div>
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Vestido Aurora</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Mezcla Lino y Seda</p>
+</div>
+<span class="font-body-lg text-body-lg text-primary">$210</span>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary border-b border-primary/20 pb-0.5 group-hover:border-primary transition-all" href="#">
+                            Ver diseño
+                            <span class="material-symbols-outlined text-[18px]">keyboard_arrow_right</span>
+</a>
+</div>
+<!-- Product Card 4 -->
+<div class="group scroll-reveal">
+<div class="aspect-[3/4] overflow-hidden rounded-lg mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Still life editorial shot of a woman in a sand-colored knit set resting on an organic wooden bench, soft light accentuating the fabric's artisanal weave." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVEh4AqNxZ6cDc9KqSborA2RH7bx2rc0J2Pjhzc1knG0tL5uFLDsftHM5jiT4Yc0Kyp_6iGmdOxjiueJ1wqwIw-sUURd-CYONMOChXK7KQqfhdFYCcxzXSKlhr-8D7TjjqO6aledQH-5mCVBBejZajRW2kjQ3LQ2FGrF9uWBwTZFczc8lLqIBd3wcPBAzBtQTzwLp1e0CGJIqQr9s892LcmKdlGCOgPmWm0MCxVOcP-gBYWp7cFIN8ss1r5cQQWwhku_nvS-MVwPs">
+</div>
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Conjunto Calma</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Lana merino liviana</p>
+</div>
+<span class="font-body-lg text-body-lg text-primary">$240</span>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary border-b border-primary/20 pb-0.5 group-hover:border-primary transition-all" href="#">
+                            Ver diseño
+                            <span class="material-symbols-outlined text-[18px]">keyboard_arrow_right</span>
+</a>
+</div>
+<!-- Product Card 5 -->
+<div class="group scroll-reveal" style="transition-delay: 100ms;">
+<div class="aspect-[3/4] overflow-hidden rounded-lg mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Clean minimalist shot of a woman in an olive green pleated skirt and a simple tank top, standing in front of large windows with garden views." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRlVFXU3pyw-Mkz-0XA-8ksfe_QLwyHCQyyOBHZrtSmyd7w0C5iqT-U54jReiVfZuxCZwaeX-EW1_KLlIFDPYw8xXmvbtDjs1sefZkg3bYiy1YQ7hSZKOHO9-CuauY1p_xI1VwguW3LvSE1IxpsK8eaXvPTWGvEPdxJ41QuI5tlGxz5dKndtY7UdRB-xqlzO01wMkiGw-p9d0pBSOE-yCYD_lDGWjkvL5OAN1mXtiRAApaoIVNSjC0L_pLrpZkWRYEwUWAG2OHu7w">
+</div>
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Falda Horizonte</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Lino 100%</p>
+</div>
+<span class="font-body-lg text-body-lg text-primary">$130</span>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary border-b border-primary/20 pb-0.5 group-hover:border-primary transition-all" href="#">
+                            Ver diseño
+                            <span class="material-symbols-outlined text-[18px]">keyboard_arrow_right</span>
+</a>
+</div>
+<!-- Product Card 6 -->
+<div class="group scroll-reveal" style="transition-delay: 200ms;">
+<div class="aspect-[3/4] overflow-hidden rounded-lg mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of a woman wearing a simple but perfectly tailored white linen shift dress, highlighting the natural imperfections of the premium fabric." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCILmTns8vlOVEVERKsv7nXZ7bp_-aqIscj_9fsnqI1pbuWsZUs3bbCpNLfqE8AiPHIMO4PkfJcYIPvW1BZW-91orV8MaO-oMJhxcrA9sulLhMo4o9wnRz2Grj1d98c6A_TBjm1WvVci2PEdb7oIPP76QGvFT5-_noJb9e6Njyj90Ij3rOyH2VUd-rqSPhwznzdDPB8bVNOg7ac3wEEGzyPIlz8E2fYdCiFxu0VP1NE6SG0UapckLDUOL3Pqj-I66GVlZUr2Mb-a3s">
+<div class="absolute top-4 left-4 bg-surface/90 px-3 py-1 rounded-full">
+<span class="font-label-sm text-label-sm text-primary uppercase">Hecho a medida</span>
+</div>
+</div>
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Vestido Minimal</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Lino Crudo</p>
+</div>
+<span class="font-body-lg text-body-lg text-primary">$160</span>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary border-b border-primary/20 pb-0.5 group-hover:border-primary transition-all" href="#">
+                            Ver diseño
+                            <span class="material-symbols-outlined text-[18px]">keyboard_arrow_right</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Section -->
+<section class="py-32 bg-surface-container-low overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="order-2 md:order-1 scroll-reveal">
+<div class="relative group">
+<div class="aspect-[4/5] overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover" data-alt="Atmospheric shot of an artisanal workspace with rolls of linen fabrics in earthy tones, wooden spools of thread, and a vintage sewing machine in soft daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBl9nf_V1NXG1SZYyQpGLgOx08Nb50lG_nDGKlA03kHR6IvpVmjUV_0DC-TDSd4fiBh--ynUf5sKa3WCWzVc9Y9VogdipTcit_9U1tOi6IQcyEfZQaWGWVch9udEGnTNRrZJfjp9WgqeMMatvJzJjpLI_GRBYhht6jGg8vmnarPN3sQiU0nL7J2Sj9J8F93baJgSVUiJTSAkWqO6g2Fk1COdwzTJFELT21j010y2I0NQRipd3DLV1UOuYWeIXzFnr4MtUtTfDAAxV8">
+</div>
+<!-- Floating element for depth -->
+<div class="absolute -bottom-10 -right-10 w-64 h-64 bg-secondary-container rounded-lg -z-10 opacity-50 blur-xl"></div>
+</div>
+</div>
+<div class="order-1 md:order-2 scroll-reveal">
+<span class="font-label-md text-label-md text-primary uppercase tracking-[0.2em] mb-6 block">Personalización</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-8">Diseños que se adaptan a vos</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed">
+                            Creemos en la moda consciente y en prendas que duren toda la vida. Por eso, en nuestro atelier de Montevideo, podemos personalizar colores, telas, largos y algunos detalles para que cada prenda tenga una identidad propia y se ajuste perfectamente a tu estilo y cuerpo.
+                        </p>
+<div class="space-y-6 mb-12">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">palette</span>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">Paleta a medida</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Elegí entre más de 12 tonos de lino teñidos artesanalmente.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">straighten</span>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">Ajuste Perfecto</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Ajustamos largos y talles para que te sientas cómoda en cada movimiento.</p>
+</div>
+</div>
+</div>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-md text-label-md hover:shadow-lg transition-all transform hover:-translate-y-1">
+                            Consultar por personalización
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Aesthetic Divider -->
+<div class="w-full h-px bg-outline-variant max-w-container-max mx-auto opacity-30"></div>
+<!-- Instagram/Process Section (Story Carousel style) -->
+<section class="py-24 bg-background">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center mb-16 scroll-reveal">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Detrás de la costura</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Seguí nuestro proceso creativo en Montevideo</p>
+</div>
+<div class="flex gap-gutter overflow-x-auto no-scrollbar px-margin-desktop pb-8">
+<!-- Story Item 1 -->
+<div class="flex-shrink-0 w-64 group cursor-pointer scroll-reveal">
+<div class="aspect-[9/16] rounded-2xl overflow-hidden mb-3 border-2 border-primary/20 p-1 group-hover:border-primary transition-colors">
+<img class="w-full h-full object-cover rounded-xl" data-alt="Vertical video still showing hands delicately cutting a large piece of rust-colored linen on a wooden table, artistic overhead shot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1W0JkmukC3U1haM78sWhppKQGxyUzoMIPBguubALqzQdWIpHQQLW9OVK9wqS6rZ0bjAHaUMoaIzMGFJgXVWN7hv8BIMn-Q44ne9x_1edy6Ices5dYudmxe_g9n_68jcvi7sWW4kVt9pThTiRG4bzQWgGUflxncXautlFIzG4tP2fcGLEz3K1--33FcC1fOLkcdRHu2lPVqsu7Z4Dnf8m75meIT0hvhqNJd7VzVfQdouK4_oTE7WoCjP3AJzvE1pNc9-NqxkpoKxQ">
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block text-center">Selección de telas</span>
+</div>
+<!-- Story Item 2 -->
+<div class="flex-shrink-0 w-64 group cursor-pointer scroll-reveal" style="transition-delay: 100ms;">
+<div class="aspect-[9/16] rounded-2xl overflow-hidden mb-3 border-2 border-primary/20 p-1 group-hover:border-primary transition-colors">
+<img class="w-full h-full object-cover rounded-xl" data-alt="A portrait-oriented artistic shot of sunlight streaming through a window onto a row of completed linen dresses hanging on a brass rack." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4RmkUIUKJAeTRroSHA6Rv3HfAP1JtexmHbPEsfua8HnLxvT7vrLGSkk6I5pWJ_j4fqB1jY4Rp8piyWMm1KM9KthF5hLPc9rvQJsNtht4lgR-pro7dVTh26hy48IfyGJ5FtYgIoDwzLzEos5XiEI1AZYhT5hZwYntZxlX2OoGeoeSDcKYCP7ZVqsAAz76TrvC4ic72SfJiuC-V6ri0luP6ze_Ttm0HTugb5JT06LTrcOLfudKg_PEprwDtvG0ClpJQle-xjCRSBtw">
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block text-center">Nuestra luz</span>
+</div>
+<!-- Story Item 3 -->
+<div class="flex-shrink-0 w-64 group cursor-pointer scroll-reveal" style="transition-delay: 200ms;">
+<div class="aspect-[9/16] rounded-2xl overflow-hidden mb-3 border-2 border-primary/20 p-1 group-hover:border-primary transition-colors">
+<img class="w-full h-full object-cover rounded-xl" data-alt="Vertical shot of an embroidered detail on a sleeve, showing the intricate needlework and the rich texture of the fabric." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDErs7aFY9hVDjUgJFJy_ikSfnsaVIs8n7Y7Za9Ofs0J0AOJheS6gLlDWkraOhmJOCJOLA1_cT8UBXy7HUoKThdCz9-ZqNPZO0FzcBScOD9jnQjl9s3P-ucziGbXr6GCmV0ZRXaLrjhMEJ7adFxk-axP1QcSmv779VgZmDnkem5VbKKFY8oh_UIXaxhf_v3BhE8i1gMZfFRpYNLT2sbqp1WSpemCrPForMisQdkruWUhEeBKCH677HGLC8ipP0xvsAI_V6Oz9Yp7Xw">
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block text-center">Bordado a mano</span>
+</div>
+<!-- Story Item 4 -->
+<div class="flex-shrink-0 w-64 group cursor-pointer scroll-reveal" style="transition-delay: 300ms;">
+<div class="aspect-[9/16] rounded-2xl overflow-hidden mb-3 border-2 border-primary/20 p-1 group-hover:border-primary transition-colors">
+<img class="w-full h-full object-cover rounded-xl" data-alt="Atmospheric vertical shot of a model walking in slow motion through an old stone building in Montevideo wearing a flowy linen gown." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1k3pDm3zFiyIsoGNXsGQPptc0S6pDTHWzpgC-UemvNXb9ki9sB57W0cpqFVQd98yosmnR1WSYQBAg7uF_OuyonD0ad5qoHBgHX4TJa8nl11-EVpbDPhnyV9UyUfy6BDZmsR33V2OylzPOBiA9gUcrn7OD3v8fqRb8RnoOtREf8TUuKLq5TjeSYoeLwZugIl5X0JJOh_VIW3Tg2khu3pRKnaNVgrK_naEy8BkWurEL6kwK-drzvL_sKsKOS2e7Voy4ifVLpn3xK_g">
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block text-center">En movimiento</span>
+</div>
+<!-- Story Item 5 -->
+<div class="flex-shrink-0 w-64 group cursor-pointer scroll-reveal" style="transition-delay: 400ms;">
+<div class="aspect-[9/16] rounded-2xl overflow-hidden mb-3 border-2 border-primary/20 p-1 group-hover:border-primary transition-colors">
+<img class="w-full h-full object-cover rounded-xl" data-alt="Vertical image showing an elegant packaging box with a sprig of dried lavender and a hand-written note on top of a folded garment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCODlOZtem6PNIvUWx2Vn3kJla9lVp4inb32iuZkMuPxCYDwjRA1lUckBOSb19MVGTOCmSjM9q2UIKR6d7TtIgwOlnGh-4OoG1YMu0RFXoiLom3sY6pwL13kNBJdSC77bPoYgAch2u-YD0B7YN8iGf-TNGj3yLr4npR-vujlfs9qWIFHniWIGMduIzjyFn1po_h57eed3h860hwhGpD8kEH9yZgduK4Lba560nzuez2AuzOLjMbvBEMxX6IJSBibeOqVr-Z59vuV6k">
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block text-center">Tu paquete</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-20 bg-surface-container-low border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-desktop py-16 grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Brand Column -->
+<div class="flex flex-col gap-6">
+<h2 class="font-headline-sm text-headline-sm text-primary">Komugi</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Prendas diseñadas para habitar. Arte textil desde Montevideo para el mundo.</p>
+<div class="flex gap-4">
+<a class="material-symbols-outlined text-secondary hover:text-primary transition-colors" href="#">public</a>
+<a class="material-symbols-outlined text-secondary hover:text-primary transition-colors" href="#">favorite</a>
+<a class="material-symbols-outlined text-secondary hover:text-primary transition-colors" href="#">mail</a>
+</div>
+</div>
+<!-- Links Column 1 -->
+<div>
+<h4 class="font-label-md text-label-md text-on-surface uppercase mb-6">Explorar</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">About Our Atelier</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Sustainability</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Our Process</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Gallery</a></li>
+</ul>
+</div>
+<!-- Links Column 2 -->
+<div>
+<h4 class="font-label-md text-label-md text-on-surface uppercase mb-6">Atención</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Shipping &amp; Returns</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Care Guide</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<!-- Newsletter Column -->
+<div>
+<h4 class="font-label-md text-label-md text-on-surface uppercase mb-6">Suscribite</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Recibí noticias sobre nuevos diseños y eventos del taller.</p>
+<form class="flex flex-col gap-3">
+<input class="bg-surface-bright border border-outline-variant rounded-lg px-4 py-2 focus:border-primary focus:ring-0 transition-all font-body-md" placeholder="Email" type="email">
+<button class="bg-primary text-on-primary font-label-md py-2.5 rounded-lg hover:opacity-90 transition-opacity">Unirme</button>
+</form>
+</div>
+</div>
+<!-- Copyright -->
+<div class="max-w-container-max mx-auto px-margin-desktop py-8 border-t border-outline-variant/30 text-center">
+<p class="font-body-md text-body-md text-on-surface-variant opacity-70">
+                © 2024 Komugi Artisanal Boutique. Crafted with love in Montevideo.
+            </p>
+</div>
+</footer>
+<script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('h-16', 'shadow-sm');
+                header.classList.remove('h-20');
+            } else {
+                header.classList.remove('h-16', 'shadow-sm');
+                header.classList.add('h-20');
+            }
+        });
+    </script>
+</body></html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contacto | Komugi Artisanal</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#fbf9f5",
+                    "primary-container": "#9a6950",
+                    "surface-dim": "#dbdad6",
+                    "on-primary-fixed": "#311302",
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed": "#f9dfb1",
+                    "on-tertiary-container": "#fffbff",
+                    "secondary-container": "#ffca98",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#dcc497",
+                    "tertiary": "#6c5a35",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#7a532a",
+                    "surface-container-highest": "#e4e2de",
+                    "inverse-on-surface": "#f2f0ed",
+                    "on-primary-container": "#fffbff",
+                    "surface-tint": "#80543b",
+                    "secondary-fixed-dim": "#f0bd8b",
+                    "on-surface": "#1b1c1a",
+                    "on-primary": "#ffffff",
+                    "on-background": "#1b1c1a",
+                    "background": "#fbf9f5",
+                    "on-primary-fixed-variant": "#653d26",
+                    "tertiary-container": "#86724c",
+                    "surface-container": "#efeeea",
+                    "outline-variant": "#d6c3ba",
+                    "surface": "#fbf9f5",
+                    "secondary-fixed": "#ffdcbd",
+                    "on-secondary-fixed-variant": "#623f18",
+                    "on-surface-variant": "#51443e",
+                    "inverse-surface": "#30312e",
+                    "outline": "#83746d",
+                    "primary": "#7e5139",
+                    "inverse-primary": "#f4ba9c",
+                    "surface-container-low": "#f5f3ef",
+                    "surface-container-high": "#eae8e4",
+                    "on-secondary-fixed": "#2c1600",
+                    "on-tertiary-fixed-variant": "#554422",
+                    "on-tertiary-fixed": "#261a00",
+                    "error": "#ba1a1a",
+                    "secondary": "#7d562d",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed": "#ffdbca"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "container-max": "1280px",
+                    "unit": "8px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "body-md": ["Montserrat"],
+                    "headline-sm": ["Playfair Display"],
+                    "label-sm": ["Montserrat"],
+                    "display-lg": ["Playfair Display"],
+                    "body-lg": ["Montserrat"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "label-md": ["Montserrat"],
+                    "headline-md": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.03em", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        .form-input-focus:focus {
+            outline: none;
+            border-color: #7e5139;
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed antialiased">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-surface-dim docked full-width top-0 z-50">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="flex items-center gap-10">
+<a class="font-headline-md text-headline-md text-primary tracking-widest uppercase" href="#">Komugi</a>
+<ul class="hidden md:flex gap-8 items-center">
+<li><a class="text-on-surface-variant font-body-md hover:text-primary transition-colors cursor-pointer active:opacity-70" href="#">Home</a></li>
+<li><a class="text-on-surface-variant font-body-md hover:text-primary transition-colors cursor-pointer active:opacity-70" href="#">Collections</a></li>
+<li><a class="text-on-surface-variant font-body-md hover:text-primary transition-colors cursor-pointer active:opacity-70" href="#">Our Story</a></li>
+<li><a class="text-on-surface-variant font-body-md hover:text-primary transition-colors cursor-pointer active:opacity-70" href="#">Journal</a></li>
+<li><a class="text-on-surface-variant font-body-md hover:text-primary transition-colors cursor-pointer active:opacity-70" href="#">Atelier</a></li>
+<li><a class="text-primary font-bold border-b-2 border-primary pb-1 cursor-pointer active:opacity-70" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-on-surface cursor-pointer hover:text-primary transition-all duration-300" data-icon="favorite">favorite</button>
+<button class="material-symbols-outlined text-on-surface cursor-pointer hover:text-primary transition-all duration-300" data-icon="shopping_bag">shopping_bag</button>
+</div>
+</nav>
+</header>
+<main class="pt-20 pb-32">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-20 text-center">
+<h1 class="font-display-lg text-display-lg text-primary mb-6">Conversemos</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Escribinos para consultar por una prenda, coordinar un pedido personalizado o resolver cualquier duda.
+            </p>
+</section>
+<!-- Main Grid -->
+<section class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Left Column: Info -->
+<div class="md:col-span-5 space-y-12">
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="chat_bubble">chat_bubble</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">WhatsApp</p>
+<a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors" href="#">+598 900 000 000</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="camera">camera</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Instagram</p>
+<a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors" href="#">@komugi.artisanal</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="mail">mail</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Email</p>
+<a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors" href="mailto:hola@komugi.uy">hola@komugi.uy</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="location_on">location_on</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Ubicación</p>
+<p class="font-body-md text-body-md text-on-surface">Montevideo, Uruguay</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="schedule">schedule</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Horarios</p>
+<p class="font-body-md text-body-md text-on-surface">Lunes a Viernes de 10:00 a 19:00 hs</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="local_shipping">local_shipping</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Envíos</p>
+<p class="font-body-md text-body-md text-on-surface">Cadetería propia en Montevideo &amp; DAC a todo el país.</p>
+</div>
+</div>
+</div>
+<!-- WhatsApp Highlight Card -->
+<div class="bg-surface-container-low p-8 rounded-lg border border-outline-variant/30 space-y-4">
+<h3 class="font-headline-sm text-headline-sm text-primary">¿Preferís una respuesta más rápida?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Estamos disponibles para asesorarte en tiempo real.</p>
+<a class="inline-flex items-center justify-center px-8 py-3 bg-primary text-white font-label-md rounded-full hover:bg-primary-container transition-all duration-300" href="#">
+                        Escribir por WhatsApp
+                    </a>
+</div>
+</div>
+<!-- Right Column: Form -->
+<div class="md:col-span-7 bg-white p-10 rounded-lg shadow-[0_4px_24px_rgba(126,81,57,0.04)] border border-surface-container-high">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Nombre completo</label>
+<input class="w-full bg-surface-container-low border-b border-outline-variant p-3 font-body-md form-input-focus focus:bg-white transition-all" placeholder="Tu nombre" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">WhatsApp o Email</label>
+<input class="w-full bg-surface-container-low border-b border-outline-variant p-3 font-body-md form-input-focus focus:bg-white transition-all" placeholder="Ej: +598... o correo@mail.com" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Motivo de consulta</label>
+<select class="w-full bg-surface-container-low border-b border-outline-variant p-3 font-body-md form-input-focus focus:bg-white transition-all appearance-none cursor-pointer">
+<option>Consulta por producto</option>
+<option>Prenda personalizada</option>
+<option>Talles y medidas</option>
+<option>Entregas</option>
+<option>Otro</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Producto relacionado (Opcional)</label>
+<input class="w-full bg-surface-container-low border-b border-outline-variant p-3 font-body-md form-input-focus focus:bg-white transition-all" placeholder="Nombre de la prenda" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Mensaje</label>
+<textarea class="w-full bg-surface-container-low border-b border-outline-variant p-3 font-body-md form-input-focus focus:bg-white transition-all resize-none" placeholder="¿Cómo podemos ayudarte?" rows="4"></textarea>
+</div>
+<button class="w-full py-4 bg-primary text-white font-label-md rounded-full hover:bg-primary-container shadow-lg shadow-primary/10 transition-all duration-300 active:scale-[0.98]" type="submit">
+                        Enviar consulta
+                    </button>
+</form>
+</div>
+</section>
+<!-- Map Section -->
+<section class="mt-32 max-w-container-max mx-auto px-margin-desktop">
+<div class="relative h-[450px] w-full rounded-xl overflow-hidden group">
+<div class="absolute inset-0 z-10 bg-primary/10 mix-blend-multiply transition-opacity group-hover:opacity-0 pointer-events-none duration-700"></div>
+<div class="w-full h-full bg-cover bg-center grayscale-[30%] brightness-[1.05] transition-transform duration-[2000ms] group-hover:scale-105" data-alt="An artistic, soft-focus aerial view of Montevideo, Uruguay during the golden hour. The image features warm sunlight reflecting off the Rio de la Plata, with soft silhouettes of historic buildings and lush coastal parks. The overall aesthetic is minimalist and editorial, using a palette of creams, clay, and muted terracotta to match an artisanal boutique branding." data-location="Montevideo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBrCLTMntBoDm7M3LIPrVBTUU4A1AUuRsrXtkj1_81laSpaSjeq1XfkkmvAXOfn42_44dWDFy31kbSFyeT6lb7RKYmMzausEt-cHG0ydDKETeIhu9CM58uFvZTiRSkksPzW9I1FiObIr_uHdigj92Vy0yTbDdYZwEW9JfSy4BhLZGfrT4A_a0FHTN6c_CCLZlMi28pRsAhEznaQ0lzN7lPwsm-Kdhl1xobHDNIwtQUgBd_fZ_iPSwqo9_0k_b0qErtFhTAn0DIAwOs')"></div>
+<div class="absolute bottom-12 left-12 z-20 bg-surface/90 backdrop-blur-md p-8 rounded-lg border border-primary/20 max-w-sm">
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Nuestro Atelier</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Ubicados en el corazón de Montevideo, donde cada pieza cobra vida a través de manos artesanas.</p>
+<p class="font-label-md text-label-md text-primary uppercase tracking-widest">Montevideo, Uruguay</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-lowest border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-20 max-w-container-max mx-auto">
+<div class="space-y-6">
+<a class="font-headline-sm text-headline-sm text-primary" href="#">Komugi</a>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Piezas atemporales creadas con respeto por el material y la artesana.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-primary uppercase mb-2">Shop</h4>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors underline-offset-4 hover:underline" href="#">Sustainability</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors underline-offset-4 hover:underline" href="#">Shipping &amp; Returns</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors underline-offset-4 hover:underline" href="#">Wholesale</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-primary uppercase mb-2">Explore</h4>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors underline-offset-4 hover:underline" href="#">Our Story</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors underline-offset-4 hover:underline" href="#">Journal</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors underline-offset-4 hover:underline" href="#">Contact Us</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-primary uppercase mb-2">Legal</h4>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors underline-offset-4 hover:underline" href="#">Privacy Policy</a>
+<div class="mt-4 flex gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="share">share</span>
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="favorite">favorite</span>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop py-8 border-t border-outline-variant/30 text-center">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Komugi Artisanal. Handcrafted in Montevideo.</p>
+</div>
+</footer>
+<script>
+        // Micro-interactions for form focus and input validation
+        document.querySelectorAll('input, select, textarea').forEach(el => {
+            el.addEventListener('focus', () => {
+                el.parentElement.querySelector('label').classList.add('text-primary');
+            });
+            el.addEventListener('blur', () => {
+                el.parentElement.querySelector('label').classList.remove('text-primary');
+            });
+        });
+
+        // Simple form submission feedback
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = form.querySelector('button');
+            const originalText = btn.innerText;
+            btn.innerText = 'Enviando...';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                btn.innerText = '¡Enviado!';
+                btn.classList.replace('bg-primary', 'bg-tertiary');
+                form.reset();
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.classList.replace('bg-tertiary', 'bg-primary');
+                    btn.disabled = false;
+                }, 3000);
+            }, 1500);
+        });
+    </script>
+</body></html>

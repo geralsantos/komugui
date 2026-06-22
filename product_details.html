@@ -1,0 +1,427 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Vestido Clara | Komugi Artisanal Boutique</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&amp;family=Montserrat:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-primary": "#ffffff",
+                "primary-fixed": "#ffdbca",
+                "secondary-container": "#ffca98",
+                "surface-tint": "#80543b",
+                "on-secondary-container": "#7a532a",
+                "tertiary-fixed": "#f9dfb1",
+                "outline": "#83746d",
+                "on-tertiary-fixed": "#261a00",
+                "on-secondary": "#ffffff",
+                "on-surface-variant": "#51443e",
+                "on-background": "#1b1c1a",
+                "error-container": "#ffdad6",
+                "secondary-fixed-dim": "#f0bd8b",
+                "primary-container": "#9a6950",
+                "tertiary": "#6c5a35",
+                "surface-container-high": "#eae8e4",
+                "on-primary-fixed": "#311302",
+                "surface-container": "#efeeea",
+                "inverse-on-surface": "#f2f0ed",
+                "surface-bright": "#fbf9f5",
+                "surface-container-lowest": "#ffffff",
+                "primary": "#7e5139",
+                "error": "#ba1a1a",
+                "on-secondary-fixed-variant": "#623f18",
+                "tertiary-container": "#86724c",
+                "inverse-surface": "#30312e",
+                "tertiary-fixed-dim": "#dcc497",
+                "surface": "#fbf9f5",
+                "on-secondary-fixed": "#2c1600",
+                "on-tertiary": "#ffffff",
+                "on-primary-fixed-variant": "#653d26",
+                "surface-container-highest": "#e4e2de",
+                "on-tertiary-container": "#fffbff",
+                "primary-fixed-dim": "#f4ba9c",
+                "surface-variant": "#e4e2de",
+                "secondary-fixed": "#ffdcbd",
+                "background": "#fbf9f5",
+                "inverse-primary": "#f4ba9c",
+                "on-tertiary-fixed-variant": "#554422",
+                "outline-variant": "#d6c3ba",
+                "on-error-container": "#93000a",
+                "secondary": "#7d562d",
+                "surface-container-low": "#f5f3ef",
+                "surface-dim": "#dbdad6",
+                "on-primary-container": "#fffbff",
+                "on-error": "#ffffff",
+                "on-surface": "#1b1c1a"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "margin-desktop": "64px",
+                "container-max": "1280px",
+                "margin-mobile": "16px",
+                "unit": "8px",
+                "gutter": "24px"
+            },
+            "fontFamily": {
+                "headline-sm": ["Playfair Display"],
+                "body-lg": ["Montserrat"],
+                "label-sm": ["Montserrat"],
+                "label-md": ["Montserrat"],
+                "display-lg": ["Playfair Display"],
+                "body-md": ["Montserrat"],
+                "headline-md": ["Playfair Display"],
+                "display-lg-mobile": ["Playfair Display"]
+            },
+            "fontSize": {
+                "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.03em", "fontWeight": "500"}],
+                "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "600"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-thumb {
+            border: 1px solid #7e5139;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .custom-shadow {
+            box-shadow: 0 10px 30px -10px rgba(126, 81, 57, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky z-50 bg-surface/80 backdrop-blur-md">
+<nav class="max-w-container-max mx-auto px-margin-desktop flex justify-between items-center h-20">
+<div class="font-display-lg text-display-lg text-primary tracking-tighter">Komugi</div>
+<div class="hidden md:flex gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#">Home</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="#">Girls</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#">Women</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#">Gallery</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-primary text-2xl hover:opacity-80 transition-opacity" data-icon="shopping_basket">shopping_basket</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:opacity-90 transition-opacity">Consultation</button>
+</div>
+</nav>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-10">
+<!-- Breadcrumbs -->
+<nav class="flex gap-2 text-label-sm text-on-surface-variant mb-8 uppercase tracking-widest">
+<a class="hover:text-primary" href="#">Inicio</a>
+<span>/</span>
+<a class="hover:text-primary" href="#">Niñas</a>
+<span>/</span>
+<span class="text-primary font-semibold">Vestidos</span>
+</nav>
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-32">
+<!-- Left Column: Images -->
+<div class="flex flex-col gap-4">
+<div class="relative group overflow-hidden rounded-lg custom-shadow">
+<img alt="Vestido Clara Main" class="w-full object-cover aspect-[3/4] cursor-zoom-in transition-transform duration-700 hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLtoqiIAEAuH6NEG8FtYQ_sprt-o1zGJLV0o02cDFrQVfsCAw7g-JZ7RPt1RYN7uAihmlKhy-k2xbRgQlav_oa4QEhMtd3yum4mhQfuFjmWXuRAkDFOo_m9WRMWe1AXKNodoM2-AgaRmVVKTwlEovopZniA6Lcu-FR-bz_FU4xUyaN7McmGU-zTtUcJlgemCl24IDTwnsuZPZn59rtT2IBfVwIKiUp7X-ANO1IMEciBfGpwGZsNDyM-QQHo">
+<div class="absolute bottom-4 right-4 bg-white/60 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary">zoom_in</span>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-4">
+<button class="rounded-lg overflow-hidden border border-transparent active-thumb transition-all">
+<img alt="Front view" class="w-full aspect-square object-cover opacity-80 hover:opacity-100" src="https://lh3.googleusercontent.com/aida/AP1WRLtoqiIAEAuH6NEG8FtYQ_sprt-o1zGJLV0o02cDFrQVfsCAw7g-JZ7RPt1RYN7uAihmlKhy-k2xbRgQlav_oa4QEhMtd3yum4mhQfuFjmWXuRAkDFOo_m9WRMWe1AXKNodoM2-AgaRmVVKTwlEovopZniA6Lcu-FR-bz_FU4xUyaN7McmGU-zTtUcJlgemCl24IDTwnsuZPZn59rtT2IBfVwIKiUp7X-ANO1IMEciBfGpwGZsNDyM-QQHo">
+</button>
+<div class="rounded-lg overflow-hidden bg-surface-container h-full aspect-square relative" data-alt="A close-up high-resolution photograph of the back of a handmade linen girl's dress, showing delicate mother-of-pearl buttons and a soft bow tie. The lighting is warm and natural, emphasizing the artisanal texture of the fabric. The overall style is minimalist and clean, consistent with the Komugi boutique aesthetic.">
+<img alt="Back view" class="w-full h-full object-cover opacity-80 hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX05J0NiJVnFwk9VBoiZm5bQHYmmbCrTURGGKZWn7yL864eDHQrw76Qe1s5iKf2cxlMX8hQCq9L9Dw-LMMDfgJUtKAdLH21zI05GRgWZ7_NbXC6Zyx4RPL4CCYVFzZRGdEkvbS96-1HI8lHdTPReIJxaxEa4dEvQPtFiiFNpmAe2wtvd6Nofp6iBkM33ck3OPTHSu8orFCT7GX19rLkkefiRugu5jK9rRqoLYMepT8ffvEyJ3H22H0PHId1Kb9zdVWzqR9xXX3X9c">
+</div>
+<div class="rounded-lg overflow-hidden bg-surface-container h-full aspect-square relative" data-alt="A macro shot of premium 100% linen fabric in a natural cream tone. The weave is visible, showing the organic texture and high quality of the artisanal material. Soft, diffuse sunlight creates gentle highlights and shadows across the fibers. Designed for a high-end, tactile brand experience.">
+<img alt="Fabric detail" class="w-full h-full object-cover opacity-80 hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhPMp2S9ellWltzCx81W19XLz6GuqUnJ3kwS2lfkPSe_wWcXFe3KgDsJtbpIE4lrKaqIGRhLb0R4vkQQ9eq3yAMLtqqBVQ5OqQLVqV6B0YZQnoIFFV8ZxAKPk3PHHLINTVKcVQtEPwVSq6xOeylqbRgFY1gKr1QZo3e4N3a8W-CqtsFSTLHZUvSIJaVDzr7rXqm9AGXdhElMfNGEueYhUFjLy0A_bWDajiGwfbTcckeu3zTjwftPQHTXxRrkeP6GHyP2POtTj_Q0A">
+</div>
+<div class="rounded-lg overflow-hidden bg-surface-container h-full aspect-square relative" data-alt="Detail shot of the hand-stitched embroidery and seams on a children's dress. A needle and thread are visible in a staged atelier setting with soft-focus clay pottery in the background. The color palette is composed of warm earths, terracottas, and creams, evoking craftsmanship and love.">
+<img alt="Stitching detail" class="w-full h-full object-cover opacity-80 hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVxEQMgDlvY6tnpTsRh9mjgAhNixo4zTgyC6loL8OqYJOvgShjNZWef-RVxmwWeU0_-fTEVSA37HMWzofGw7UWy9-V6fVlHMueLBIsw65kUm7euTvTVRO7_GW3XUkRLwtruOdXbUDRwSp1W4OsH5BX2FjQz62_Z1HzbfeKnzl3eiahcG9ZoBWgwBfQs0LKKbByrpQsWIM5mbmLsuAzcAjTCcGRVw39ByvRLsrrVmKmxlVEM0pqm2u6m0KLBO3KrXMpoTSeimUnbHM">
+</div>
+</div>
+</div>
+<!-- Right Column: Product Details -->
+<div class="flex flex-col gap-6">
+<div>
+<span class="text-label-md text-secondary tracking-widest uppercase mb-2 block">Niñas - Vestidos</span>
+<h1 class="font-display-lg text-display-lg text-primary mb-2">Vestido Clara</h1>
+<div class="flex items-center gap-4">
+<span class="font-headline-md text-headline-md text-on-surface">Desde $2.900</span>
+<span class="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full text-label-sm font-semibold">Por encargo</span>
+</div>
+</div>
+<div class="h-px bg-outline-variant w-full"></div>
+<!-- Color Selector -->
+<div class="space-y-3">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Color</span>
+<div class="flex gap-4">
+<button class="w-10 h-10 rounded-full border-2 border-primary bg-[#F5F2ED] relative" title="Natural">
+<span class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">done</span>
+</span>
+</button>
+<button class="w-10 h-10 rounded-full border border-outline-variant bg-[#E5B6A9]" title="Dusty Pink"></button>
+<button class="w-10 h-10 rounded-full border border-outline-variant bg-[#7E5139]" title="Terracotta"></button>
+</div>
+</div>
+<!-- Size Selector -->
+<div class="space-y-3">
+<div class="flex justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Talle (años)</span>
+<button class="text-label-sm text-primary underline">Guía de talles</button>
+</div>
+<div class="flex gap-3">
+<button class="flex-1 py-3 border border-primary bg-primary text-on-primary font-label-md rounded-lg">2</button>
+<button class="flex-1 py-3 border border-outline-variant text-on-surface-variant hover:border-primary transition-colors font-label-md rounded-lg">4</button>
+<button class="flex-1 py-3 border border-outline-variant text-on-surface-variant hover:border-primary transition-colors font-label-md rounded-lg">6</button>
+<button class="flex-1 py-3 border border-outline-variant text-on-surface-variant hover:border-primary transition-colors font-label-md rounded-lg">8</button>
+</div>
+</div>
+<!-- Details -->
+<div class="grid grid-cols-2 gap-6 bg-surface-container-low p-6 rounded-xl">
+<div class="flex flex-col gap-1">
+<span class="text-label-sm text-on-surface-variant">Material</span>
+<span class="font-semibold text-primary">Lino premium</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-label-sm text-on-surface-variant">Tiempo estimado</span>
+<span class="font-semibold text-primary">15-20 días</span>
+</div>
+<div class="col-span-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">local_shipping</span>
+<span class="text-body-md">Envío a domicilio o retiro en atelier</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-3 pt-4">
+<button class="w-full bg-[#25D366] hover:bg-[#1EBE57] text-white py-5 rounded-lg flex items-center justify-center gap-3 transition-transform active:scale-95 font-label-md text-lg">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                        Consultar por WhatsApp
+                    </button>
+<button class="w-full border-2 border-primary text-primary py-5 rounded-lg hover:bg-primary-fixed/30 transition-colors font-label-md text-lg">
+                        Solicitar a medida
+                    </button>
+<p class="text-label-sm text-on-surface-variant italic text-center mt-2">Te responderemos para confirmar talle, color, disponibilidad y fecha de entrega.</p>
+</div>
+<!-- Accordions -->
+<div class="mt-8 space-y-2">
+<details class="group border-b border-outline-variant pb-4" open="">
+<summary class="flex justify-between items-center cursor-pointer list-none font-label-md text-on-surface py-2">
+                            Descripción
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-4 text-on-surface-variant leading-relaxed">
+<p>El Vestido Clara es una pieza atemporal diseñada para momentos especiales. Confeccionado íntegramente a mano, presenta detalles artesanales únicos, un ajuste cómodo y una caída suave propia del lino de alta calidad. Ideal para bautismos, celebraciones o simplemente un día lleno de gracia.</p>
+</div>
+</details>
+<details class="group border-b border-outline-variant pb-4">
+<summary class="flex justify-between items-center cursor-pointer list-none font-label-md text-on-surface py-2">
+                            Materiales
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-4 text-on-surface-variant">
+<p>Utilizamos exclusivamente 100% Lino Premium, seleccionado por su transpirabilidad y durabilidad. Un tejido natural que mejora con cada lavado.</p>
+</div>
+</details>
+<details class="group border-b border-outline-variant pb-4">
+<summary class="flex justify-between items-center cursor-pointer list-none font-label-md text-on-surface py-2">
+                            Medidas &amp; Guía
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-4 overflow-x-auto">
+<table class="w-full text-label-sm text-left">
+<thead class="bg-surface-container">
+<tr>
+<th class="p-2 border border-outline-variant">Talle</th>
+<th class="p-2 border border-outline-variant">Contorno</th>
+<th class="p-2 border border-outline-variant">Largo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="p-2 border border-outline-variant">2 años</td>
+<td class="p-2 border border-outline-variant">52cm</td>
+<td class="p-2 border border-outline-variant">45cm</td>
+</tr>
+<tr>
+<td class="p-2 border border-outline-variant">4 años</td>
+<td class="p-2 border border-outline-variant">56cm</td>
+<td class="p-2 border border-outline-variant">52cm</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+</div>
+</div>
+</section>
+<!-- Our Process Section -->
+<section class="mb-32 py-20 bg-surface-container-low rounded-[40px] px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Nuestro Proceso</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Cada pieza es única, confeccionada con paciencia y dedicación en nuestro atelier.</p>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-12">
+<div class="flex flex-col items-center text-center gap-4">
+<div class="w-20 h-20 rounded-full bg-white flex items-center justify-center text-primary custom-shadow">
+<span class="material-symbols-outlined text-4xl">contact_support</span>
+</div>
+<div>
+<h4 class="font-label-md text-on-surface mb-1 uppercase tracking-wider">1. Consulta</h4>
+<p class="text-label-sm text-on-surface-variant">Asesoramiento personalizado vía WhatsApp.</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-4">
+<div class="w-20 h-20 rounded-full bg-white flex items-center justify-center text-primary custom-shadow">
+<span class="material-symbols-outlined text-4xl">verified</span>
+</div>
+<div>
+<h4 class="font-label-md text-on-surface mb-1 uppercase tracking-wider">2. Confirmación</h4>
+<p class="text-label-sm text-on-surface-variant">Definimos detalles finales y talle.</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-4">
+<div class="w-20 h-20 rounded-full bg-white flex items-center justify-center text-primary custom-shadow">
+<span class="material-symbols-outlined text-4xl">styler</span>
+</div>
+<div>
+<h4 class="font-label-md text-on-surface mb-1 uppercase tracking-wider">3. Confección</h4>
+<p class="text-label-sm text-on-surface-variant">Elaboración artesanal de la prenda.</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-4">
+<div class="w-20 h-20 rounded-full bg-white flex items-center justify-center text-primary custom-shadow">
+<span class="material-symbols-outlined text-4xl">local_mall</span>
+</div>
+<div>
+<h4 class="font-label-md text-on-surface mb-1 uppercase tracking-wider">4. Entrega</h4>
+<p class="text-label-sm text-on-surface-variant">Envío o retiro pronto para regalar.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Related Designs Section -->
+<section class="mb-32">
+<div class="flex justify-between items-end mb-12">
+<h2 class="font-headline-md text-headline-md text-primary">Diseños Relacionados</h2>
+<a class="text-primary font-label-md border-b border-primary pb-1" href="#">Ver catálogo completo</a>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Related Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] rounded-lg overflow-hidden mb-4 relative bg-surface-container-highest" data-alt="A beautiful handmade girls dress in a soft terracotta linen hanging in a sun-drenched minimalist room. The atmosphere is warm and high-end, focusing on the texture of the organic cotton lace details. Professional studio lighting with soft shadows.">
+<img alt="Vestido Alma" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZTRMdiJGk5nLxg9budZfdfDRCofH4cfDyA8oaH1H-7_YN7XdEegV2I5yj3Zdl7DvJfD9w60HDSK4h33DuveUTMBRpIGCf4YO3LSdUSCMrPAOrny2hqydbRyoN_9EDRWJzpbIIkZ5T5gLffjmifaFDqlzgk6lsygetn8jZCNwNJ__BHJS2Sc3zAruAEBo9wCm9G4HLvaZlpD7768Xwd0NVepybCiG1zfz3l2bEBNpHeGdQtNEYzDvFO6GGvtCknQF8Cf_tXXgF4M4">
+</div>
+<h3 class="font-label-md text-on-surface mb-1">Vestido Alma</h3>
+<p class="text-on-surface-variant font-semibold">$3.100</p>
+</div>
+<!-- Related Card 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] rounded-lg overflow-hidden mb-4 relative bg-surface-container-highest" data-alt="Artisanal girls blouse with hand-embroidered floral details on the collar. The material is premium cream-colored linen. Photographed in an editorial style with warm earthy tones and soft natural light in a Montevideo atelier.">
+<img alt="Blusa Flora" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJUwEUtQqilzHxmSYhk3ag5MwjBsF1v7o1ZUQqr4ZbUFMtAEoK7TnAHKjuSo4WyEKYDELG8qJz9G9alXMGnEpMb5-NDG3smzJVSVfEfg1qMz3w04UR0Ct64RVG_rPdNFCPJh5PeDCO_S0gBG1OiI8-4XgikJxpFDUm-MRobKl9J_WVIlCwLaimwlCLj0IHhuvv41ofWRquSjsXYbSrnd5v9QInhJ46dpKzmIU2gUeusylVrk3fu3FlM4owb86-wOJGitV9dfl5c88">
+</div>
+<h3 class="font-label-md text-on-surface mb-1">Blusa Flora</h3>
+<p class="text-on-surface-variant font-semibold">$1.950</p>
+</div>
+<!-- Related Card 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] rounded-lg overflow-hidden mb-4 relative bg-surface-container-highest" data-alt="A toddler linen romper in dusty pink, featuring wooden buttons and delicate ruffles. Minimalist clean background with a warm, sun-kissed lighting aesthetic. High-end boutique photography showing artisanal quality.">
+<img alt="Ranita Olivia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGKRNcJnRCQohHH2dJQORHomeh8DFfALDIkL4n6jp4v6Txy-lIJhwg2TiYXY8ubDTZvFUsjyP_ym1JSkNi-Lw8VpNn2HPUtNlNOdPyrGqm1vJKJhjqs3Yl1gqCFJe6OXvCLtUqQPYOnLB757lJh1_9xHYdIsF5h1I6t7vg0a-mknMyYv-HEcnxqOSH-hpnEd0Bma8EWx8YvvqRYWy0bhEe-4lKFVnFoeaKkuG5hmTFPaLohvVqS1oNHmkFoje_3HOkJHVqTZwu21M">
+</div>
+<h3 class="font-label-md text-on-surface mb-1">Ranita Olivia</h3>
+<p class="text-on-surface-variant font-semibold">$2.400</p>
+</div>
+<!-- Related Card 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] rounded-lg overflow-hidden mb-4 relative bg-surface-container-highest" data-alt="Minimalist girls sun dress in a warm mustard yellow linen. Clean lines and artisanal finish. Editorial product photography with high-key lighting and a sense of serenity and timelessness.">
+<img alt="Vestido Sol" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO8IO-sNuEB1JEc8c14vazHABa5mM8XPYzO4NQIam7KHSVHLYFqhmdSV-CrglvwleY3HShtLV7UXAOq1BJ1PeVkXkwq8F0eXYNgqIfzyDXrYQ4UeZwBAkmVtGVf7gnIUy7o1XytASfZe04YOUKNqGRBJS5GTver2189tttp3TNyB6oikRhGdRU7lxtcfKuD7kgBXCANHCBrVcrm8NS0f7rJ6OK8G-SvehKaiubOCkflwa_l4y508H5KHjtvPlHf0sI2Sms54vmQR4">
+</div>
+<h3 class="font-label-md text-on-surface mb-1">Vestido Sol</h3>
+<p class="text-on-surface-variant font-semibold">$2.800</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-20 bg-surface-container-low border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-desktop py-16 grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="flex flex-col gap-6">
+<div class="font-headline-sm text-headline-sm text-primary">Komugi</div>
+<p class="text-on-surface-variant font-body-md leading-relaxed">
+                    Artesanía consciente y diseño atemporal para niñas y mujeres que valoran lo hecho a mano.
+                </p>
+</div>
+<div>
+<h5 class="text-primary font-semibold mb-6 font-label-md uppercase tracking-widest">Nuestra Tienda</h5>
+<ul class="flex flex-col gap-4 text-on-surface-variant">
+<li><a class="hover:text-secondary transition-colors" href="#">About Our Atelier</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Sustainability</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Shipping &amp; Returns</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-primary font-semibold mb-6 font-label-md uppercase tracking-widest">Colecciones</h5>
+<ul class="flex flex-col gap-4 text-on-surface-variant">
+<li><a class="hover:text-secondary transition-colors" href="#">Línea Niñas</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Mujer Essentials</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Accesorios</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Gift Cards</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-primary font-semibold mb-6 font-label-md uppercase tracking-widest">Newsletter</h5>
+<p class="text-on-surface-variant mb-4 text-label-sm">Recibe noticias sobre nuevos lanzamientos y el proceso en el atelier.</p>
+<div class="flex flex-col gap-3">
+<input class="bg-surface border border-outline-variant rounded-lg px-4 py-2 focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Email" type="email">
+<button class="bg-secondary text-on-primary py-2 rounded-lg font-label-md hover:opacity-90 transition-opacity">Suscribirme</button>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop py-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-secondary font-body-md text-body-md">© 2024 Komugi Artisanal Boutique. Crafted with love in Montevideo.</p>
+<div class="flex gap-6">
+<a class="material-symbols-outlined text-secondary" data-icon="facebook" href="#">facebook</a>
+<a class="material-symbols-outlined text-secondary" data-icon="instagram" href="#">instagram</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for thumb switching (simulated)
+        const thumbnails = document.querySelectorAll('.active-thumb');
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                thumbnails.forEach(t => t.classList.remove('active-thumb'));
+                this.classList.add('active-thumb');
+            });
+        });
+    </script>
+</body></html>

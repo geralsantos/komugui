@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hecho a medida | Komugi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#f9dfb1",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#eae8e4",
+                        "secondary-fixed": "#ffdcbd",
+                        "surface-variant": "#e4e2de",
+                        "background": "#fbf9f5",
+                        "on-surface": "#1b1c1a",
+                        "secondary-fixed-dim": "#f0bd8b",
+                        "tertiary-container": "#86724c",
+                        "inverse-surface": "#30312e",
+                        "surface-tint": "#80543b",
+                        "on-surface-variant": "#51443e",
+                        "on-tertiary-fixed-variant": "#554422",
+                        "primary-container": "#9a6950",
+                        "surface-container": "#efeeea",
+                        "outline-variant": "#d6c3ba",
+                        "inverse-on-surface": "#f2f0ed",
+                        "surface-dim": "#dbdad6",
+                        "primary-fixed": "#ffdbca",
+                        "on-secondary-fixed-variant": "#623f18",
+                        "on-secondary-fixed": "#2c1600",
+                        "surface-container-low": "#f5f3ef",
+                        "surface-container-highest": "#e4e2de",
+                        "on-tertiary-container": "#fffbff",
+                        "surface": "#fbf9f5",
+                        "tertiary-fixed-dim": "#dcc497",
+                        "surface-bright": "#fbf9f5",
+                        "on-primary-container": "#fffbff",
+                        "on-secondary-container": "#7a532a",
+                        "secondary-container": "#ffca98",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#311302",
+                        "inverse-primary": "#f4ba9c",
+                        "on-background": "#1b1c1a",
+                        "primary-fixed-dim": "#f4ba9c",
+                        "error": "#ba1a1a",
+                        "secondary": "#7d562d",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "primary": "#7e5139",
+                        "on-tertiary-fixed": "#261a00",
+                        "on-primary-fixed-variant": "#653d26",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#83746d",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#6c5a35"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px",
+                        "container-max": "1280px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Montserrat"],
+                        "label-md": ["Montserrat"],
+                        "body-lg": ["Montserrat"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-sm": ["Playfair Display"],
+                        "body-md": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.03em", "fontWeight": "500"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .scrolled-header {
+            box-shadow: 0 4px 20px -5px rgba(126, 81, 57, 0.1);
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 z-50 w-full transition-all duration-300 bg-background/80 backdrop-blur-md" id="main-nav">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="flex items-center gap-8">
+<a class="text-headline-md font-headline-md text-primary uppercase tracking-widest cursor-pointer" href="/">Komugi</a>
+<nav class="hidden md:flex gap-8">
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors cursor-pointer" href="#">Collections</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors cursor-pointer" href="#">Our Story</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors cursor-pointer" href="#">Journal</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors cursor-pointer" href="#">Atelier</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<a class="hidden lg:block text-primary font-semibold border-b border-primary pb-1 font-label-md text-label-md cursor-pointer" href="/hecho-a-medida">Hecho a medida</a>
+<div class="flex gap-4 items-center">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-80 transition-opacity">shopping_bag</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-80 transition-opacity">favorite</span>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex items-center px-margin-mobile md:px-margin-desktop py-20 overflow-hidden">
+<div class="max-w-container-max mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="z-10 order-2 lg:order-1">
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg text-primary mb-6 leading-tight">Una prenda creada especialmente para vos</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-10 max-w-lg">Partimos de una idea, elegimos materiales y cuidamos cada detalle para confeccionar una prenda única.</p>
+<a class="inline-block bg-primary text-on-primary px-10 py-5 rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-primary-container transition-all shadow-sm" href="#form">Comenzar mi pedido</a>
+</div>
+<div class="order-1 lg:order-2 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-xl transform rotate-1 hover:rotate-0 transition-transform duration-700">
+<img class="w-full h-full object-cover" data-alt="Close up of a pair of skilled hands carefully hand-embroidering small colorful flowers onto high-quality linen fabric in a sun-drenched atelier. Soft morning light streams through a window, highlighting the organic texture of the natural linen and the vibrant clay-toned threads. The overall mood is artisanal, serene, and deeply rooted in craftsmanship and timeless boutique elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-1gAChF4D45EGpQmtCadXQ9kPQXUe6lEtjm_3ZDgRUJVC6bI0nTgRrY84--DFaiDasvKvqwClHh76-CuXWVMc_HMvykmDYQqw_ITyR3Ur2uRqIrezmXwk8ru1n7WVsO3hfvObNoaSRf9M4NjCLrViQn2IK_YSe-5P74fXSnZ-Mt_gdwpRZlQsItGim7VEW_hM4EbvOZ3dRXuyuBWazxqFiKUWbmS8vknsvN6kUol8zJtzZc99hT4bGreK7NjZOJmKo1yZCzqHG4Y"/>
+</div>
+<div class="absolute -bottom-6 -left-6 md:-bottom-12 md:-left-12 w-48 h-48 md:w-64 md:h-64 rounded-xl overflow-hidden border-8 border-background shadow-lg transform -rotate-3 hover:rotate-0 transition-transform duration-700 hidden md:block">
+<img class="w-full h-full object-cover" data-alt="A vintage black sewing machine on a rustic wooden table, surrounded by spools of thread in earthy tones like ochre, olive, and terracotta. Warm sunlight highlights the intricate gold leaf details on the machine and the soft texture of stacked linen remnants. The setting evokes a sense of tradition and slow fashion within a boutique workshop context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsO8HTqR5IdLsAvE0DOotN-hZYt0dk2ihdhNlXAAAJ5F6B0-wdf_LMySoFxHlzDLj8iusABUg1me58LW3eOGqgMOpicOcaBTo-eUA4dM0lWHX-1MAQPgXACSVyz3vCCZhphw2n1DvtSMLmIE1ZmaG8s4QdwMaDVd7qrySpMGk_MOlNqTXzEknY01evaPmDJGTfaosJa5Fyqb4TlIwjh4827cpj8oH9OISmu7uBaAyGM9HCNiGEvr5IKO6JfPbk_dqIgnsS0IANdPY"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="bg-surface-container-low py-32 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-20">
+<h2 class="text-headline-md font-headline-md text-primary mb-4">El proceso artesanal</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">Un camino compartido desde la inspiración hasta tu guardarropa.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Step 1 -->
+<div class="reveal-on-scroll group text-center p-8 bg-background rounded-xl border border-outline-variant/30 hover:border-primary/40 transition-all">
+<div class="w-16 h-16 bg-secondary-fixed flex items-center justify-center rounded-full mx-auto mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-secondary-fixed text-3xl">lightbulb</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Contanos tu idea</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Elegir tipo de prenda, estilo y ocasión para la cual la imaginás.</p>
+</div>
+<!-- Step 2 -->
+<div class="reveal-on-scroll group text-center p-8 bg-background rounded-xl border border-outline-variant/30 hover:border-primary/40 transition-all" style="transition-delay: 100ms;">
+<div class="w-16 h-16 bg-secondary-fixed flex items-center justify-center rounded-full mx-auto mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-secondary-fixed text-3xl">straighten</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Definimos detalles</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Coordinamos tela, color, talle, medidas exactas y terminaciones.</p>
+</div>
+<!-- Step 3 -->
+<div class="reveal-on-scroll group text-center p-8 bg-background rounded-xl border border-outline-variant/30 hover:border-primary/40 transition-all" style="transition-delay: 200ms;">
+<div class="w-16 h-16 bg-secondary-fixed flex items-center justify-center rounded-full mx-auto mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-secondary-fixed text-3xl">favorite</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Confeccionamos</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">La prenda se realiza artesanalmente con tiempos dedicados de producción.</p>
+</div>
+<!-- Step 4 -->
+<div class="reveal-on-scroll group text-center p-8 bg-background rounded-xl border border-outline-variant/30 hover:border-primary/40 transition-all" style="transition-delay: 300ms;">
+<div class="w-16 h-16 bg-secondary-fixed flex items-center justify-center rounded-full mx-auto mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-secondary-fixed text-3xl">local_shipping</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Entrega coordinada</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Entrega personal en Montevideo o envío coordinado a todo el interior.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Inquiry Form Section -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop bg-background" id="form">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-5">
+<h2 class="text-display-lg-mobile md:text-headline-md font-headline-md text-primary mb-8 leading-tight">Iniciá tu pedido a medida</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-12">Completá el formulario para que podamos conocer tu idea y brindarte un presupuesto personalizado.</p>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-1">Tiempos de entrega</p>
+<p class="text-body-md text-on-surface-variant">Los tiempos dependen de la complejidad de cada diseño y disponibilidad.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">texture</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-1">Telas exclusivas</p>
+<p class="text-body-md text-on-surface-variant">La disponibilidad de telas es limitada para garantizar la exclusividad.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">payments</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-1">Presupuesto</p>
+<p class="text-body-md text-on-surface-variant">Confirmamos el presupuesto total antes de comenzar cualquier confección.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-sm border border-outline-variant/30">
+<form action="#" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="col-span-2 md:col-span-1">
+<label class="block text-label-sm font-label-sm text-primary uppercase mb-2">Nombre</label>
+<input class="w-full bg-surface-container-low border-transparent focus:border-primary focus:ring-0 rounded-lg p-4 transition-all" placeholder="Tu nombre completo" type="text"/>
+</div>
+<div class="col-span-2 md:col-span-1">
+<label class="block text-label-sm font-label-sm text-primary uppercase mb-2">WhatsApp</label>
+<input class="w-full bg-surface-container-low border-transparent focus:border-primary focus:ring-0 rounded-lg p-4 transition-all" placeholder="099 123 456" type="tel"/>
+</div>
+<div class="col-span-2">
+<label class="block text-label-sm font-label-sm text-primary uppercase mb-2">Correo (opcional)</label>
+<input class="w-full bg-surface-container-low border-transparent focus:border-primary focus:ring-0 rounded-lg p-4 transition-all" placeholder="tu@email.com" type="email"/>
+</div>
+<div class="col-span-2 md:col-span-1">
+<label class="block text-label-sm font-label-sm text-primary uppercase mb-2">Prenda deseada</label>
+<input class="w-full bg-surface-container-low border-transparent focus:border-primary focus:ring-0 rounded-lg p-4 transition-all" placeholder="Ej: Vestido de fiesta" type="text"/>
+</div>
+<div class="col-span-2 md:col-span-1">
+<label class="block text-label-sm font-label-sm text-primary uppercase mb-2">Categoría</label>
+<select class="w-full bg-surface-container-low border-transparent focus:border-primary focus:ring-0 rounded-lg p-4 transition-all appearance-none">
+<option>Seleccionar</option>
+<option>Niña</option>
+<option>Mujer</option>
+</select>
+</div>
+<div class="col-span-2 md:col-span-1">
+<label class="block text-label-sm font-label-sm text-primary uppercase mb-2">Talle o edad</label>
+<input class="w-full bg-surface-container-low border-transparent focus:border-primary focus:ring-0 rounded-lg p-4 transition-all" placeholder="Ej: Talle M o 4 años" type="text"/>
+</div>
+<div class="col-span-2 md:col-span-1">
+<label class="block text-label-sm font-label-sm text-primary uppercase mb-2">Fecha necesaria</label>
+<input class="w-full bg-surface-container-low border-transparent focus:border-primary focus:ring-0 rounded-lg p-4 transition-all" type="date"/>
+</div>
+<div class="col-span-2">
+<label class="block text-label-sm font-label-sm text-primary uppercase mb-2">Descripción de la idea</label>
+<textarea class="w-full bg-surface-container-low border-transparent focus:border-primary focus:ring-0 rounded-lg p-4 transition-all" placeholder="Contanos más detalles sobre lo que buscás..." rows="4"></textarea>
+</div>
+<div class="col-span-2">
+<label class="block text-label-sm font-label-sm text-primary uppercase mb-2">Fotos de referencia</label>
+<div class="w-full border-2 border-dashed border-outline-variant rounded-lg p-8 text-center bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">cloud_upload</span>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Click para subir o arrastrá tus imágenes</p>
+</div>
+</div>
+<div class="col-span-2 flex items-start gap-3 py-2">
+<input class="mt-1 rounded border-outline-variant text-primary focus:ring-primary" id="consent" type="checkbox"/>
+<label class="text-label-sm font-label-sm text-on-surface-variant" for="consent">Acepto los términos del servicio artesanal y la confirmación de presupuesto previo.</label>
+</div>
+<div class="col-span-2 mt-4">
+<button class="w-full bg-primary text-on-primary py-5 rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-primary-container transition-all flex items-center justify-center gap-3" type="submit">
+                                    Continuar por WhatsApp
+                                    <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-headline-md font-headline-md text-primary mb-4">Preguntas frecuentes</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">Todo lo que necesitás saber sobre nuestro servicio atelier.</p>
+</div>
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<div class="bg-background rounded-lg border border-outline-variant/30 overflow-hidden">
+<button class="w-full px-6 py-5 flex justify-between items-center text-left hover:bg-surface-container-high transition-colors group" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-primary">¿Cuánto demora una prenda?</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+<p class="pb-6 text-body-md text-on-surface-variant">El tiempo promedio de confección es de 15 a 20 días hábiles, pero puede variar según la complejidad del diseño y la demanda estacional. Te daremos una fecha estimada al confirmar el presupuesto.</p>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="bg-background rounded-lg border border-outline-variant/30 overflow-hidden">
+<button class="w-full px-6 py-5 flex justify-between items-center text-left hover:bg-surface-container-high transition-colors group" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-primary">¿Cómo envío las medidas?</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+<p class="pb-6 text-body-md text-on-surface-variant">Te enviaremos una guía ilustrada paso a paso por WhatsApp para que puedas tomar tus medidas en casa de forma sencilla. Si estás en Montevideo, también podemos coordinar una cita presencial.</p>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="bg-background rounded-lg border border-outline-variant/30 overflow-hidden">
+<button class="w-full px-6 py-5 flex justify-between items-center text-left hover:bg-surface-container-high transition-colors group" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-primary">¿Puedo elegir cualquier tela?</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+<p class="pb-6 text-body-md text-on-surface-variant">Trabajamos principalmente con fibras naturales como lino, algodón y lana. Te mostraremos las opciones disponibles que mejor se adapten al diseño que buscás.</p>
+</div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="bg-background rounded-lg border border-outline-variant/30 overflow-hidden">
+<button class="w-full px-6 py-5 flex justify-between items-center text-left hover:bg-surface-container-high transition-colors group" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-primary">¿Realizan prendas basadas en fotos?</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+<p class="pb-6 text-body-md text-on-surface-variant">Sí, las fotos sirven como excelente referencia. Sin embargo, no realizamos copias exactas; adaptamos la idea al estilo Komugi y a tus necesidades específicas.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA / Closing Image -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop bg-background text-center">
+<div class="max-w-4xl mx-auto">
+<div class="aspect-video mb-16 rounded-xl overflow-hidden shadow-2xl relative">
+<img class="w-full h-full object-cover" data-alt="An open eco-friendly cardboard box revealing a perfectly folded beige linen garment inside. A hand-written personalized note lies on top, adorned with a sprig of dried lavender and white baby's breath, tied with a cream-colored cotton ribbon. The soft overhead lighting creates gentle shadows on the textured paper and linen, conveying a sense of care, artisanal quality, and bespoke luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADVm5OrNshZeXFek-Lj0QFvBoDHbPJa67v4k3ZBfpWhLrcZ9XMICbLGeTXA2_yWZwrTBLRmtvUr-g4pgjKeLgRJYKGP7Vra4uRJ6yjStmXnCX7jGNYKxMGFxgLZYjQJMYcdo7xjfd5KLZOC1NqyiGeC-CPKLbpA3oBuofqPGC38Bpp5Jg374YJolshkeetBohCTHhS6w0jmx6XCHIs2sFNXTYC0iA4Q0MtW3o_M-L_7YZN6Ww7Ytq9F3sxFxd1fgrDkJMEqIMtmbY"/>
+<div class="absolute inset-0 bg-primary/10 flex items-center justify-center backdrop-blur-[2px]">
+<div class="bg-background/90 p-8 md:p-12 rounded-lg max-w-lg shadow-xl">
+<h2 class="text-headline-md font-headline-md text-primary mb-6">Tu historia, tu prenda</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mb-8">Cada costura cuenta una historia de dedicación y cuidado.</p>
+<a class="inline-block bg-primary text-on-primary px-10 py-5 rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-primary-container transition-all" href="#form">Empezar ahora</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-20 bg-surface-container-low border-t border-outline-variant flex flex-col md:flex-row justify-between items-start">
+<div class="mb-12 md:mb-0">
+<span class="text-headline-sm font-headline-sm text-primary block mb-6">Komugi</span>
+<p class="text-label-sm font-label-sm text-secondary-fixed-dim uppercase tracking-widest mb-4">Montevideo, Uruguay</p>
+<p class="text-body-md text-on-surface-variant max-w-xs">© 2024 Komugi Artisanal Boutique. Crafted with heart in Montevideo.</p>
+</div>
+<div class="grid grid-cols-2 gap-x-12 gap-y-8 md:gap-x-24">
+<div class="flex flex-col gap-4">
+<span class="text-label-sm font-label-sm text-primary uppercase font-bold mb-2">Comprar</span>
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-primary hover:underline transition-all cursor-pointer" href="#">Collections</a>
+<a class="text-primary font-bold font-label-sm text-label-sm cursor-pointer" href="#">Hecho a medida</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-primary hover:underline transition-all cursor-pointer" href="#">Journal</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-label-sm font-label-sm text-primary uppercase font-bold mb-2">Ayuda</span>
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-primary hover:underline transition-all cursor-pointer" href="#">Sustainability</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-primary hover:underline transition-all cursor-pointer" href="#">Shipping Info</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-primary hover:underline transition-all cursor-pointer" href="#">Returns</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-primary hover:underline transition-all cursor-pointer" href="#">Contact Details</a>
+</div>
+</div>
+</footer>
+<script>
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('span:last-child');
+            const isOpen = content.style.maxHeight !== '0px' && content.style.maxHeight !== '';
+
+            // Close others (optional - for accordion behavior)
+            document.querySelectorAll('.max-h-0').forEach(el => {
+                if(el !== content) {
+                    el.style.maxHeight = '0px';
+                    el.previousElementSibling.querySelector('span:last-child').style.transform = 'rotate(0deg)';
+                }
+            });
+
+            if (isOpen) {
+                content.style.maxHeight = '0px';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled-header', 'py-4');
+                header.classList.remove('py-6');
+            } else {
+                header.classList.remove('scrolled-header', 'py-4');
+                header.classList.add('py-6');
+            }
+
+            // Reveal animations
+            const reveals = document.querySelectorAll('.reveal-on-scroll');
+            reveals.forEach(reveal => {
+                const revealTop = reveal.getBoundingClientRect().top;
+                if (revealTop < window.innerHeight - 150) {
+                    reveal.classList.add('visible');
+                }
+            });
+        });
+
+        // Initialize reveal on load
+        window.dispatchEvent(new Event('scroll'));
+    </script>
+</body></html>
